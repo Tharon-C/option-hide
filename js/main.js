@@ -1,29 +1,19 @@
 (function ($, root, undefined) {
-    console.log('testing');
-    $(function () {
-        'use strict';
-
-        //Hide the field initially
+$(function () {
+'use strict';
+//Hide the field initially
         $('.child-opt').hide();
 
         //Show the item only when related option is chosen
-        $('#parent-opt').change(function () {
-            var select = $('#parent-opt').val();
-            console.log(select);
+        $('.parent-opt').change(function() {
+            var select = $(this).val();
+            $( ".child-opt" ).hide(800);
 
-            var opt = $('.child-opt').attr('data-hide-opt');
-            console.log(opt);
-
-            $(".child-opt").each(function (index, element) {
-                console.log($(this).attr('data-hide-opt'));
+            $( ".child-opt" ).each( function( index, element ){
+                if ($(this).data('hide-opt') == select) {
+                    $(this).show(800);
+                }
             });
-
-            if (select == opt) {
-                $('.child-opt').attr('data-hide-opt', opt).show('slow');
-            } else {
-                $('.child-opt').attr('data-hide-opt', opt).hide('slow');
-            }
         });
-    });
-
+});
 })(jQuery, this);
