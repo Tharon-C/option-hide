@@ -22,9 +22,10 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <label for="awesome">Are you awesome?</label>
+    <section>
+        <label>Are you awesome?</label>
         <select name="awesome" class="parent-opt">
-            <option value="---"></option>
+            <option value=""></option>
             <option value="Hell yes!">Hell yes!</option>
             <option value="Sometimes">Sometimes</option>
             <option value="Nope, I'm not">Nope not</option>
@@ -32,44 +33,46 @@
     
         <div class="child-opt" data-hide-opt="Nope, I'm not">
             <label>Why Don't you think so?</label>
-            <input type="text"size="40" maxlength="50"/>
+            <input type="text"/>
         </div>
     
         <div class="child-opt" data-hide-opt="Sometimes">
             <label for="sometimes-awesome">I think so too!</label>
-            <input type="text" name="not-awesome" size="40" maxlength="50"/>
+            <input type="text"/>
         </div>
         
         <div class="child-opt" data-hide-opt="Hell yes!">
             <label>Want to be alone with yourself?</label>
-            <input type="text" size="40" maxlength="50"/>
+            <input type="text"/>
         </div>
-
-        <label for="awesome">Are you Nice?</label>
+    </section>
+    <section>
+        <label>Are you Nice?</label>
         <select name="awesome" class="parent-opt">
-            <option value="---"></option>
+            <option value=""></option>
             <option value="Like a Mom!">Like a Mom!</option>
             <option value="When I want">When I want</option>
             <option value="I'm Mean">A Mean SOB</option>
         </select><br>
     
         <div class="child-opt" data-hide-opt="I'm Mean">
-            <label>Why Don't you think so?</label>
-            <input type="text" size="40" maxlength="50"/>
+            <label>You don't seem so mean?</label>
+            <input type="text" />
         </div>
     
         <div class="child-opt" data-hide-opt="When I want">
             <label>Your a good person</label>
-            <input type="text" size="40" maxlength="50"/>
+            <input type="text" />
         </div>
         
         <div class="child-opt" data-hide-opt="Like a Mom!">
             <label >My Mom wasn't always nice.</label>
-            <input type="text" size="40" maxlength="50"/>
+            <input type="text" />
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+    </sectionn>
     </body>
 </html>
